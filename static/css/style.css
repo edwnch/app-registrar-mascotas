@@ -1,0 +1,9 @@
+#menu-principal {
+    padding: 10px 0px 10px 0px;
+    background-color: #e1e1e1;
+    border-bottom: #eee 2px solid;
+}
+
+a.nav-link {
+    color: #2d2848;
+}
