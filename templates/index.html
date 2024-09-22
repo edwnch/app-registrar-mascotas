@@ -10,6 +10,12 @@
         
         </div>
       </div>
-
 </div>
+
+{% if usuario %}
+<div class="alert alert-success" role="alert">
+    <p>Inició sesión con el usuario {{ usuario }} </p>
+</div>
+{% endif %}
+
 {% endblock %}

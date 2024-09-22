@@ -2,4 +2,52 @@
 
 {% block content %}
 <h2>Página para registro mascotas</h2>
+<p>Por favor, llene los campos para realizar un registro de su mascota en nuestra página web.</p>
+<div class="container">
+<div class="border border-light border-2">
+<form action="", method="POST">
+    {{ form.hidden_tag() }}
+    <table>
+        <tr>
+            <td><p><b>Información del responsable:</b></p></td>
+        </tr>
+        <tr>
+            
+            <td>{{ form.responsable_nombre.label }}</td>
+            <td>{{ form.responsable_nombre }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.responsable_id.label }}</td>
+            <td>{{ form.responsable_id }}</td>
+        </tr>
+        <tr>
+            <td><br/><p><b>Información de la mascota:</b></p></td>
+        </tr>
+        <tr>
+            <td>{{ form.mascota_nombre.label }}</td><td>{{ form.mascota_nombre }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.mascota_sexo.label }}</td><td>{{ form.mascota_sexo }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.mascota_raza.label }}</td><td>{{ form.mascota_raza }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.mascota_peso.label }}</td><td>{{ form.mascota_peso }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.mascota_apoyo_emocional.label }}{{ form.mascota_apoyo_emocional }}</td>
+        </tr>
+
+        <tr>
+            <td>{{ form.recaptcha }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.submit }}</td>
+        </tr>
+    </table>
+    
+</form>
+</div>
+</div>
 {% endblock %}
