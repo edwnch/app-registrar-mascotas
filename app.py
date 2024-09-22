@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 app.config.from_mapping(
     SECRET_KEY = 'dev',
-    UPLOAD_FOLDER = 'static/uploads'
+    UPLOAD_FOLDER = 'uploads'
 )
 
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
